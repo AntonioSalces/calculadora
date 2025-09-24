@@ -1,0 +1,108 @@
+/* src/styles.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url('fondo.jpg');
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  background-color: #808080;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  position: relative;
+}
+
+.solar-panel {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, #444, #222);
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  position: relative;
+}
+
+.betis-logo {
+  height: 40px;
+  width: auto;
+}
+
+.display {
+  margin-bottom: 15px;
+}
+
+.display input {
+  width: 100%;
+  height: 60px;
+  font-size: 26px;
+  text-align: right;
+  padding: 0 15px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn.number {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.btn.operator {
+  background-color: #f1c84a;
+  color: #333;
+}
+
+.btn.clear {
+  background-color: #d9d9d9;
+  color: #333;
+}
+
+.btn.equals {
+  background-color: #4caf50;
+  color: white;
+  grid-row: span 2;
+}
+
+.btn.zero {
+  grid-column: span 2;
+}
