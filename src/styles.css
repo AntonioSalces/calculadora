@@ -106,3 +106,13 @@ body {
 .btn.zero {
   grid-column: span 2;
 }
+
+.btn.nombre {
+  grid-column: span 4;
+  background-color: #808080;
+  color: white;
+
+}
+.btn.potencia {
+  grid-column: span 4;
+}

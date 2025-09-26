@@ -4,7 +4,7 @@ let previousInput: string = '';
 
 function appendToDisplay(value: string): void {
     let update = false;
-    if (['+', '-', '*', '/', "%"].includes(value)) {
+    if (['+', '-', '*', '/', '%', '^'].includes(value)) {
         if (currentInput !== '0' && currentInput !== '') {
             if (previousInput !== '' && operator !== '') {
                 calculate();
@@ -62,6 +62,9 @@ function calculate(): void {
                 break;
             case '*':
                 result = prev * current;
+                break;
+            case '^':
+                result = Math.pow(prev, current);
                 break;
             case '%':
                 if (current === 0) {
